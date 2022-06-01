@@ -1,0 +1,18 @@
+{
+  "name": "workflow-permission-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/74th/workflow-permission-action.git"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@octokit/rest": "^18.0.6"
+  }
+}
