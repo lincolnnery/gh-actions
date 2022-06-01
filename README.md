@@ -26,9 +26,9 @@ jobs:
     name: deploy test
     steps:
       - name: check user permission
-        uses: winnin/workflow-permission-action@1.0.0
+        uses: gh-actions/permission-@1.0.0
         with:
-          users: winnin1,winnin2,winnin3
+          users: user1,user2,user3
       - name: deploy
         run: echo "deployed"
 ```
@@ -38,9 +38,9 @@ jobs:
 .github/workflows/prod-deploy-user
 
 ```
-user76th
-user77th
-user78th
+user1
+user2
+user3
 ```
 
 ```yaml
@@ -56,7 +56,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: check user permission
-        uses: winnin/workflow-permission-action@1.0.0
+        uses: gh-actions/permissionn@1.0.0
         with:
           listfile: .github/workflows/prod-deploy-user
       - name: deploy
