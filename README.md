@@ -3,10 +3,6 @@
 Event workflow_dispatch is able to start workflows manually.
 This action will fail when workflow is started by not permitted users.
 
-![](workflow_dispatch.png)
-
-![](not_permitted.png)
-
 ## Input
 
 - users: permitted user names (separated by ,)
